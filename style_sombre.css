@@ -39,6 +39,6 @@ button#btnChange:active {
 
 .container.theme button#btnChange {
     background: rgb(72, 72, 72);
-    color: yellow;
+    color: red;
 }
 
