@@ -8,8 +8,8 @@ CREATE TABLE utilisateurs (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(100) NOT NULL,
     prenom VARCHAR(100) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    mot_de_passe VARCHAR(255) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    mot_de_passe VARCHAR(150) NOT NULL,
     theme VARCHAR(50) DEFAULT 'clair',
     preferences JSON,
     date_creation DATETIME DEFAULT CURRENT_TIMESTAMP
