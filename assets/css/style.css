@@ -1,0 +1,1085 @@
+/* Styles généraux */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Thème clair (par défaut) */
+body.clair {
+    background-color: #f8f9fa;
+    color: #212529;
+    background-image: linear-gradient(120deg, rgba(240, 249, 255, 0.6), rgba(214, 252, 255, 0.8));
+    min-height: 100vh;
+}
+
+/* Thème sombre */
+body.sombre {
+    background-color: #212529;
+    color: #f8f9fa;
+    background-image: linear-gradient(120deg, rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.9));
+    min-height: 100vh;
+}
+
+/* Effet Liquid Glass / Glassmorphisme */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+body.sombre .glass-effect {
+    background: rgba(30, 30, 40, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Navbar glassmorphism */
+.navbar-main {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+body.sombre .navbar-main {
+    background: rgba(33, 37, 41, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Footer glassmorphism */
+.footer-main {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+body.sombre .footer-main {
+    background: rgba(33, 37, 41, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Card glassmorphism */
+.glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px 0 rgba(31, 38, 135, 0.2);
+}
+
+body.sombre .glass-card {
+    background: rgba(40, 45, 50, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Social links */
+.social-link {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.15);
+    color: #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(13, 110, 253, 0.2);
+    transform: translateY(-3px);
+    color: #0d6efd;
+}
+
+body.sombre .social-link {
+    background: rgba(40, 45, 50, 0.4);
+    color: #adb5bd;
+}
+
+body.sombre .social-link:hover {
+    background: rgba(13, 110, 253, 0.3);
+    color: #ffffff;
+}
+
+body.sombre .card,
+body.sombre .modal-content,
+body.sombre .list-group-item,
+body.sombre .feature-card {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #495057;
+}
+
+body.sombre .bg-light {
+    background-color: #343a40 !important;
+}
+
+body.sombre footer {
+    background-color: #343a40 !important;
+    border-color: #495057 !important;
+}
+
+body.sombre footer a {
+    color: #f8f9fa;
+}
+
+body.sombre footer a:hover {
+    color: #0d6efd;
+}
+
+body.sombre .card-header,
+body.sombre .card-footer {
+    background-color: #2c3136;
+    border-color: #495057;
+}
+
+body.sombre .navbar {
+    background-color: #212529 !important;
+}
+
+body.sombre .navbar-light .navbar-brand,
+body.sombre .navbar-light .navbar-nav .nav-link,
+body.sombre .navbar-light .navbar-text {
+    color: #f8f9fa;
+}
+
+body.sombre .navbar-light .navbar-nav .nav-link.active {
+    color: #0d6efd;
+}
+
+body.sombre .text-muted {
+    color: #adb5bd !important;
+}
+
+body.sombre .form-control,
+body.sombre .form-select {
+    background-color: #495057;
+    color: #f8f9fa;
+    border-color: #6c757d;
+}
+
+body.sombre .form-control:focus,
+body.sombre .form-select:focus {
+    background-color: #495057;
+    color: #f8f9fa;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+body.sombre .form-text {
+    color: #adb5bd !important;
+}
+
+body.sombre .dropdown-menu {
+    background-color: #343a40;
+    border-color: #495057;
+}
+
+body.sombre .dropdown-item {
+    color: #f8f9fa;
+}
+
+body.sombre .dropdown-item:hover,
+body.sombre .dropdown-item:focus {
+    background-color: #495057;
+    color: #f8f9fa;
+}
+
+body.sombre .dropdown-divider {
+    border-top-color: #495057;
+}
+
+body.sombre .btn-outline-secondary {
+    color: #adb5bd;
+    border-color: #6c757d;
+}
+
+body.sombre .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #f8f9fa;
+}
+
+body.sombre .table {
+    color: #f8f9fa;
+    border-color: #495057;
+}
+
+body.sombre .table thead th {
+    border-color: #495057;
+}
+
+body.sombre .table td,
+body.sombre .table th {
+    border-color: #495057;
+}
+
+body.sombre .table-hover tbody tr:hover {
+    color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+body.sombre .footer {
+    background-color: #212529 !important;
+}
+
+/* Styles des tâches */
+.tache-haute {
+    border-left: 5px solid #dc3545;
+}
+
+.tache-moyenne {
+    border-left: 5px solid #ffc107;
+}
+
+.tache-basse {
+    border-left: 5px solid #0d6efd;
+}
+
+.tache-terminee {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+/* Animation de chargement */
+.spinner {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem solid rgba(0, 0, 0, 0.1);
+    border-right-color: #007bff;
+    border-radius: 50%;
+    animation: spinner 0.75s linear infinite;
+}
+
+body.sombre .spinner {
+    border-color: rgba(255, 255, 255, 0.1);
+    border-right-color: #007bff;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Éléments de catégorie */
+.categorie-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+/* Personnalisation de l'emploi du temps */
+.emploi-temps-container {
+    overflow-x: auto;
+}
+
+.emploi-temps-table {
+    min-width: 900px;
+}
+
+.emploi-temps-table th {
+    width: 14.28%;
+    text-align: center;
+}
+
+.evenement {
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+/* Styles pour la navigation */
+.avatar-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.theme-toggle {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.sombre .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Styles pour la page d'accueil */
+.feature-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-4 {
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-responsive {
+        margin-bottom: 1rem;
+    }
+} 
+
+/* Améliorations des cartes */
+.card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+body.clair .card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+body.sombre .card {
+    background: rgba(40, 45, 50, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px 0 rgba(31, 38, 135, 0.15);
+}
+
+/* Améliorations des formulaires */
+.form-control, .form-select {
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+body.clair .form-control, body.clair .form-select {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 2px 10px 0 rgba(31, 38, 135, 0.05);
+}
+
+body.sombre .form-control, body.sombre .form-select {
+    background: rgba(40, 45, 50, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+/* Améliorations des boutons */
+.btn {
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
+    border: none;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0b5ed7, #084298);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.4);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #198754, #146c43);
+    border: none;
+    box-shadow: 0 4px 15px rgba(25, 135, 84, 0.3);
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #157347, #115c39);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(25, 135, 84, 0.4);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #dc3545, #b02a37);
+    border: none;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #bb2d3b, #92222f);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(220, 53, 69, 0.4);
+}
+
+/* Améliorations des tables */
+.table {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+body.clair .table {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body.sombre .table {
+    background: rgba(40, 45, 50, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Améliorations des badges */
+.badge {
+    padding: 6px 10px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+/* Animations douces */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Correction pour les menus déroulants qui passent sous les tableaux */
+.navbar {
+    position: relative;
+    z-index: 1030;
+}
+
+.dropdown-menu {
+    z-index: 1035 !important;
+    position: absolute;
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+body.sombre .dropdown-menu {
+    background-color: rgba(40, 45, 50, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+body.sombre .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Position des éléments de tableau */
+.table-responsive {
+    position: relative;
+    z-index: 1;
+}
+
+/* Assurer que les éléments de navigation sont toujours au-dessus */
+.navbar-nav .dropdown {
+    position: relative;
+    z-index: 1040;
+}
+
+/* Amélioration des alertes */
+.alert {
+    border-radius: 12px;
+    border: none;
+}
+
+body.clair .alert {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+body.sombre .alert {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+} 
+
+/* Styles pour assurer que les menus déroulants s'affichent correctement */
+.dropdown {
+    position: relative !important;
+}
+
+.dropdown-menu {
+    position: absolute !important;
+    inset: 0px auto auto 0px !important;
+    margin: 0 !important;
+    transform: translate3d(0px, 40px, 0px) !important;
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    animation: fadeIn 0.2s ease;
+}
+
+.dropdown-menu-end {
+    right: 0 !important;
+    left: auto !important;
+}
+
+/* Amélioration de l'apparence des menus déroulants */
+.dropdown-menu {
+    padding: 0.5rem;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 10rem;
+}
+
+.dropdown-item {
+    border-radius: 8px;
+    margin-bottom: 2px;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.dropdown-item:active,
+.dropdown-item:focus {
+    background-color: rgba(13, 110, 253, 0.2);
+    color: inherit;
+}
+
+.dropdown-divider {
+    margin: 0.3rem 0;
+    opacity: 0.1;
+}
+
+/* Styles pour le mode sombre */
+body.sombre .dropdown-menu {
+    background-color: rgba(33, 37, 41, 0.95);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.sombre .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.sombre .dropdown-item:active,
+body.sombre .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Styles pour les tableaux */
+.table-responsive {
+    position: relative;
+    z-index: 1;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* Styles pour les boutons d'action dans les tableaux */
+.table .btn-group {
+    position: relative;
+    z-index: 2;
+}
+
+/* Styles pour le sélecteur de couleur */
+.color-picker {
+    height: 38px;
+    padding: 0.375rem 0.75rem;
+}
+
+.color-preview {
+    border-radius: 0.25rem;
+} 
+
+/* Styles pour les animations de la page d'accueil */
+.typewriter {
+    border-right: 3px solid transparent;
+    animation: blinkCursor 0.8s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    min-height: 1.2em; /* Hauteur minimale pour éviter les sauts */
+}
+
+@keyframes blinkCursor {
+    from, to { border-color: transparent; }
+    50% { border-color: #0d6efd; }
+}
+
+/* Animation de flottement */
+.floating {
+    transition: transform 0.3s ease-out;
+}
+
+/* Amélioration des animations pour les cartes */
+.feature-card {
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transition: all 0.7s ease;
+}
+
+.feature-card:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+.feature-icon {
+    transition: transform 0.5s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.2);
+}
+
+/* Animation pour les boutons d'appel à l'action */
+.btn-primary.animate__pulse {
+    animation-duration: 2s;
+}
+
+/* Animation pour les notifications */
+.alert {
+    animation: fadeInDown 0.5s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+/* Styles pour les animations en mode sombre */
+body.sombre .typewriter {
+    animation: blinkCursorDark 0.8s step-end infinite;
+}
+
+@keyframes blinkCursorDark {
+    from, to { border-color: transparent; }
+    50% { border-color: #6ea8fe; }
+}
+
+body.sombre .feature-card::before {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+/* Amélioration des effets de glassmorphisme pour les cartes en mode sombre */
+body.sombre .glass-effect {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Animation de transition entre les thèmes */
+body {
+    transition: background-color 0.5s ease, background-image 0.5s ease, color 0.5s ease;
+}
+
+.card, .navbar, .dropdown-menu, .btn, .alert, .form-control {
+    transition: all 0.5s ease;
+} 
+
+/* Classes de délai d'animation personnalisées pour Animate.css */
+.animate__delay-05s {
+    animation-delay: 0.5s !important;
+}
+
+.animate__delay-15s {
+    animation-delay: 1.5s !important;
+}
+
+/* Accélérer les animations de pulsation */
+.animate__pulse.animate__infinite {
+    animation-duration: 1.5s !important;
+} 
+
+/* Améliorations pour le mode sombre - Navigation et Header */
+body.sombre {
+    background-color: #212529;
+    color: #f8f9fa;
+    background-image: linear-gradient(120deg, rgba(20, 30, 48, 0.8), rgba(36, 59, 85, 0.9));
+    min-height: 100vh;
+}
+
+/* Navbar en mode sombre avec effet néon */
+body.sombre .navbar-main {
+    background: rgba(33, 37, 41, 0.7) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(78, 90, 125, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25), 0 0 10px rgba(78, 115, 223, 0.15);
+}
+
+/* Liens de navigation en mode sombre */
+body.sombre .navbar-nav .nav-link {
+    color: rgba(248, 249, 250, 0.85);
+    transition: all 0.3s ease;
+}
+
+body.sombre .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Boutons actifs en mode sombre */
+body.sombre .nav-link.active {
+    background: linear-gradient(135deg, #0d6efd, #0a58ca) !important;
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.5);
+    border: none;
+    color: white !important;
+}
+
+/* Avatar utilisateur en mode sombre */
+body.sombre .rounded-circle.bg-primary {
+    background: linear-gradient(135deg, #0d6efd, #0a58ca) !important;
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.3);
+}
+
+/* Dropdown menu en mode sombre */
+body.sombre .dropdown-menu {
+    background: rgba(33, 37, 41, 0.85) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(78, 90, 125, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25), 0 0 10px rgba(78, 115, 223, 0.1);
+}
+
+body.sombre .dropdown-item {
+    color: rgba(248, 249, 250, 0.85);
+}
+
+body.sombre .dropdown-item:hover {
+    background-color: rgba(78, 115, 223, 0.15);
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Bouton de changement de thème en mode sombre */
+body.sombre .theme-toggle {
+    background: rgba(33, 37, 41, 0.5);
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
+    border: 1px solid rgba(255, 193, 7, 0.1);
+}
+
+body.sombre .theme-toggle:hover {
+    background: rgba(33, 37, 41, 0.7);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+}
+
+body.sombre .theme-toggle i {
+    color: #ffc107;
+}
+
+/* Conteneur principal en mode sombre */
+body.sombre .container {
+    background: transparent;
+}
+
+/* Animation de transition pour le changement de thème */
+.theme-toggle {
+    transition: all 0.3s ease;
+}
+
+.theme-toggle i {
+    transition: all 0.3s ease;
+} 
+
+/* Correction pour le positionnement des menus déroulants */
+.dropdown-menu {
+    z-index: 1035 !important;
+    position: absolute !important;
+    transform: translate3d(0, 38px, 0) !important;
+    top: 0 !important;
+    left: 0 !important;
+    will-change: transform !important;
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem !important;
+}
+
+/* Correction pour le menu déroulant de l'utilisateur */
+.dropdown-menu-end {
+    right: 0 !important;
+    left: auto !important;
+    transform: translate3d(0, 38px, 0) !important;
+}
+
+/* Assurer que le dropdown est bien positionné */
+.nav-item.dropdown {
+    position: relative !important;
+}
+
+/* Assurer que le dropdown est visible au survol */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+} 
+
+/* Styles pour l'emploi du temps */
+.emploi-temps-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.emploi-temps-table {
+    min-width: 900px;
+    background: white;
+    border: none;
+}
+
+.emploi-temps-table th {
+    background: #f8f9fa;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: #495057;
+}
+
+.emploi-temps-table th.table-active {
+    background: #e9ecef;
+    position: relative;
+}
+
+.emploi-temps-table th.table-active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #0d6efd;
+}
+
+.emploi-temps-table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    vertical-align: top;
+    height: 80px;
+    position: relative;
+}
+
+.emploi-temps-table td.table-active {
+    background: #f8f9fa;
+}
+
+/* Styles pour les événements et tâches */
+.evenement, .tache {
+    border-radius: 6px;
+    margin-bottom: 5px;
+    padding: 8px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.evenement:hover, .tache:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.evenement .fw-bold, .tache .fw-bold {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.evenement .small, .tache .small {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.tache-terminee {
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+/* Styles pour les boutons d'action */
+.evenement .btn-light, .tache .btn-light {
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    margin-right: 4px;
+}
+
+.evenement .btn-light:hover, .tache .btn-light:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Styles pour le formulaire d'ajout/modification */
+.form-event-card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.form-event-card .card-header {
+    padding: 20px;
+    background: linear-gradient(45deg, #0d6efd, #0a58ca);
+    color: white;
+}
+
+.form-event-card .card-body {
+    padding: 30px;
+}
+
+.form-event-card .form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-event-card .form-control,
+.form-event-card .form-select {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+
+.form-event-card .form-control:focus,
+.form-event-card .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Navigation de la semaine */
+.week-navigation {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.week-navigation .btn-outline-secondary,
+.week-navigation .btn-outline-primary {
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .emploi-temps-container {
+        margin: 10px -15px;
+        border-radius: 0;
+    }
+    
+    .emploi-temps-table td {
+        height: 60px;
+        padding: 4px;
+    }
+    
+    .evenement, .tache {
+        padding: 4px;
+    }
+    
+    .evenement .fw-bold, .tache .fw-bold {
+        font-size: 0.85rem;
+    }
+    
+    .evenement .small, .tache .small {
+        font-size: 0.75rem;
+    }
+    
+    .btn-sm {
+        padding: 2px 4px;
+        font-size: 0.75rem;
+    }
+} 
