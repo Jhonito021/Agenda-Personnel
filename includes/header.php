@@ -7,19 +7,19 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <!-- Intégration de Bootstrap pour un style rapide (version locale) -->
-    <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome pour les icônes (version locale) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Animate.css pour les animations (version locale) -->
-    <link rel="stylesheet" href="assets/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="../assets/vendor/animate/animate.min.css">
     <!-- Styles personnalisés -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Styles additionnels pour le débogage -->
     <style>
         .debug-info {

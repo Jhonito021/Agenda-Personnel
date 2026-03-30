@@ -14,7 +14,7 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 
 // Connexion à la base de données
-require_once __DIR__ . '/includes/db.php';
+require_once __DIR__ . '/../includes/db.php';
 
 
 // Gérer le changement de thème
@@ -46,23 +46,23 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'accueil';
 $action = isset($_GET['action']) ? $_GET['action'] : '';
 
 // En-tête HTML
-include 'includes/header.php';
+include __DIR__ . '/../includes/header.php';
 
 // Navigation
-include 'includes/navigation.php';
+include __DIR__ . '/../includes/navigation.php';
 
 // Contenu principal
 switch ($page) {
     case 'accueil':
-        include 'pages/accueil.php';
+        include __DIR__ . '/../pages/accueil.php';
         break;
     
     case 'connexion':
-        include 'pages/connexion.php';
+        include __DIR__ . '/../pages/connexion.php';
         break;
     
     case 'inscription':
-        include 'pages/inscription.php';
+        include __DIR__ . '/../pages/inscription.php';
         break;
     
     case 'deconnexion':
@@ -94,7 +94,7 @@ switch ($page) {
             header('Location: index.php?page=connexion');
             exit;
         }
-        include 'pages/tableau_bord.php';
+        include __DIR__ . '/../pages/tableau_bord.php';
         break;
     
     case 'taches':
@@ -104,7 +104,7 @@ switch ($page) {
             exit;
         }
         // Pas besoin de redirection spéciale pour l'action ajouter car c'est géré dans taches.php
-        include 'pages/taches.php';
+        include __DIR__ . '/../pages/taches.php';
         break;
     
     case 'categories':
@@ -113,7 +113,7 @@ switch ($page) {
             header('Location: index.php?page=connexion');
             exit;
         }
-        include 'pages/categories.php';
+        include __DIR__ . '/../pages/categories.php';
         break;
     
     case 'emploi_temps':
@@ -122,7 +122,7 @@ switch ($page) {
             header('Location: index.php?page=connexion');
             exit;
         }
-        include 'pages/emploi_temps.php';
+        include __DIR__ . '/../pages/emploi_temps.php';
         break;
     
     case 'profil':
@@ -131,14 +131,14 @@ switch ($page) {
             header('Location: index.php?page=connexion');
             exit;
         }
-        include 'pages/profil.php';
+        include __DIR__ . '/../pages/profil.php';
         break;
     
     default:
-        include 'pages/accueil.php';
+        include __DIR__ . '/../pages/accueil.php';
         break;
 }
 
 // Pied de page
-include 'includes/footer.php';
+include __DIR__ .  '/../includes/footer.php';
 ?> 

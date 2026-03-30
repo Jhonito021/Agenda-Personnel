@@ -30,6 +30,6 @@
 
     <!-- JavaScript Bootstrap (version locale) -->
     <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html> 
